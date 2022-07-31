@@ -5,9 +5,14 @@ let secretMessage = ['Learning', 'is', 'not', 'about', 'what',
 
 secretMessage.pop();
 secretMessage.length;
-secretMessage.splice(24, 25, 'to', 'Program');
-secretMessage.splice(7, 1, 'right');
+secretMessage.push('to', 'Program');
+
+secretMessage[7] ='right';
+
 secretMessage.shift();
-secretMessage.splice(0, 0, 'Programming');
+
+secretMessage.unshift('Programming');
+
 secretMessage.splice(6, 5, 'know');
-console.log(secretMessage);
+
+console.log(secretMessage.join(' '));
